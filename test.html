@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <script>
+      const url = 'http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?sidoName=서울&pageNo=1&numOfRows=100&returnType=xml&serviceKey=WGScCCXJB6AS59TVUi23GrXGznEckWHIz9OC26JUsKNPV4IQ3%2BXRNGJfiX%2BzfOwvUGXGNiyQyYU7fbw4iIauyw%3D%3D&ver=1.0';
+    fetch(url)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log('GET 요청 오류 ' + error));
+    </script>
+</body>
+</html>
